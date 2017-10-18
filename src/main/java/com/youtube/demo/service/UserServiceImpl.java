@@ -24,4 +24,9 @@ public class UserServiceImpl implements UserService {
 		return this.userRepository.findAll();
 	}
 
+	@Override
+	public void deleteUser(Long id) {
+		this.userRepository.delete(id);
+	}
+
 }
